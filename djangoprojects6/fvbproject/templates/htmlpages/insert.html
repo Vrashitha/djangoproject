@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{%extends 'htmlpages/parent.html'%}
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{%block for_child%}
+	<h1>Insertion Form</h1>
+	<form method="POST">
+		{{form.as_p}}
+		{%csrf_token%}
+		<input type="submit" value="Insert New Record">
+	</form>
+	{%endblock%}
+
+</body>
+</html>

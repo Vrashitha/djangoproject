@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body bgcolor="pink">
+	<center>
+		<h1><b><u>Student Information</b></u></h1>
+		<table border=2>
+			<tr>
+				<td><b>Class</b></td>
+				<td><b>Name</b></td>
+				<td><b>Phno</b></td>
+				<td><b>Usn</b></td>
+				<td><b>Add</b></td>
+				<td><b>Marks</b></td>
+				
+			</tr>
+			{%for i in Stud%}
+			<tr>
+				<td>{{i.Class}}</td>
+				<td>{{i.Name}}</td>
+				<td>{{i.Phno}}</td>
+				<td>{{i.Usn}}</td>
+				<td>{{i.Add}}</td>
+				<td>{{i.Marks}}</td>
+				
+			</tr>
+			{%endfor%}
+		</table>
+	</center>
+
+</body>
+</html>

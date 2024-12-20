@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+	<h1><u>Database Information</u></h1>
+	<table border="2px">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Roll</b></td>
+			<td><b>Marks</b></td>
+			<td><b>DOB</b></td>
+			<td><b>E-mail</b></td>
+		</tr>
+		{%for i in stud%}	
+		<tr>
+			<td>{{i.name}}</td>
+			<td>{{i.roll}}</td>
+			<td>{{i.marks}}</td>
+			<td>{{i.dob}}</td>
+			<td>{{i.email}}</td>
+		</tr>
+		{%endfor%}
+</table>
+</center>
+	
+
+
+
+</body>
+</html>

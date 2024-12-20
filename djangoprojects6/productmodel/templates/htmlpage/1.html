@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body bgcolor="cyan">
+	<center>
+		<h1><b><u>Product Information</b></u></h1>
+		<table border=2>
+			<tr>
+				<td><b>Pid</b></td>
+				<td><b>Pname</b></td>
+				<td><b>Price</b></td>
+				
+			</tr>
+			{%for i in Emp%}
+			<tr>
+				<td>{{i.Pid}}</td>
+				<td>{{i.Pname}}</td>
+				<td>{{i.Price}}</td>
+				
+				
+			</tr>
+			{%endfor%}
+		</table>
+	</center>
+
+</body>
+</html>

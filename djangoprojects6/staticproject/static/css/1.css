@@ -1,0 +1,15 @@
+h1{
+	color:red;
+
+}
+img{
+	height:200px;
+	width:100px;
+}
+h3{
+	color:blue;
+}
+div{
+	display:flex;
+	justify-content:space-between;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor='cyan'>
+	<center>
+
+<h1><b><u>Employee Information</u></b></h1>
+<table border=2>
+	<tr>
+		<td><b>Eid</b></td>
+		<td><b>Ename</b></td>
+		<td><b>Ephno</b></td>
+		<td><b>Sal</b></td>
+		<td><b>Add</b></td>
+		<td><b>Designation</b></td>
+	</tr>
+	{%for i in emp%}
+	<tr>
+		<td>{{i.Eid}}</td>
+		<td>{{i.Ename}}</td>
+		<td>{{i.Ephno}}</td>
+		<td>{{i.Sal}}</td>
+		<td>{{i.Add}}</td>
+		<td>{{i.Designation}}</td>
+	</tr>
+	{%endfor%}
+
+</table>
+</center>
+</body>
+</html>

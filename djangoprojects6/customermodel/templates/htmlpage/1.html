@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body bgcolor="cyan">
+	<center>
+		<h1><b><u>Customer Information</b></u></h1>
+		<table border=2>
+			<tr>
+				<td><b>Cid</b></td>
+				<td><b>Fname</b></td>
+				<td><b>Lname</b></td>
+				<td><b>Lid</b></td>
+				
+			</tr>
+			{%for i in Emp%}
+			<tr>
+				<td>{{i.Cid}}</td>
+				<td>{{i.Fname}}</td>
+				<td>{{i.Lname}}</td>
+				<td>{{i.Lid}}</td>
+				
+			</tr>
+			{%endfor%}
+		</table>
+	</center>
+
+</body>
+</html>
